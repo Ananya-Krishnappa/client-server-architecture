@@ -2,16 +2,18 @@
  * Function to save the employee details. It fetches the details from the form
  *  and stores in employeePayrollData object
  */
-function save() {
+function save(event) {
+    event.preventDefault();
+    event.stopPropagation();
     try {
         let postUrl = "http://localhost:3000/EmployeePayrollDB/";
-        let methodType="POST";
+        let methodType = "POST";
         let empData = createEmployeePayroll();
         let id = extractIdFromUrl();
         if (id) {
             empData.id = id;
             postUrl = `http://localhost:3000/EmployeePayrollDB/${id}`;
-            methodType="PUT";
+            methodType = "PUT";
         }
         makePromiseCall(methodType, postUrl, true, empData)
             .then(responseText => {
