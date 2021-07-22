@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.emp-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+
+.emp-payroll {
+    color: #42515f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    min-height: calc(100% -80px);
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+label {
+    min-width: 140px;
+    padding: 12px 12px 12px 0;
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid#ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.gender-container>.text {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+.department-container>.text {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
+
+.buttonParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    cursor: pointer;
+    color: #42515F;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    border-radius: 5px;
+}
+
+.submitButton {
+    background-color: #f5f5f5;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+}
+
+.text-error {
+    margin: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+#salary-container,
+#date-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#date-container>select {
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+#day,
+#month {
+    margin-right: 10px;
+}
+
+#salaryOutput {
+    position: relative;
+    top: 12px;
+}
+
+@media only screen and (max-width:960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .form {
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .uploadButton {
+        justify-content: flex-start;
+    }
+
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .submitButton {
+        margin: 0;
+    }
+
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}

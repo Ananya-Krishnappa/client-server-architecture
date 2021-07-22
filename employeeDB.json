@@ -3,39 +3,26 @@
     {
       "id": 1,
       "_name": "Mark",
-      "_gender": "male",
+      "_profile": "../assets/profile-images/Ellipse -4.png",
+      "_gender": "F",
       "_department": [
-        "Engineering",
+        "Finance"
+      ],
+      "_salary": "537800",
+      "_notes": "hugfytd",
+      "_startDate": "2021-02-19T18:30:00.000Z"
+    },
+    {
+      "_name": "Mark",
+      "_profile": "../assets/profile-images/Ellipse -1.png",
+      "_gender": "M",
+      "_department": [
         "Finance"
       ],
       "_salary": "500000",
-      "_startDate": "29 Oct 2019",
-      "_note": "All In One",
-      "_profilePic": "../assets/profile-images/Ellipse -3.png"
-    },
-    {
-      "id": 2,
-      "_name": "Bill Gates",
-      "_gender": "male",
-      "_department": [
-        "Engineering"
-      ],
-      "_salary": "500000",
-      "_startDate": "29 Oct 2019",
-      "_note": "Terrific Engineer",
-      "_profilePic": "../assets/profile-images/Ellipse -1.png"
-    },
-    {
-      "_name": "Ananya",
-      "_gender": "female",
-      "_department": [
-        "Sales"
-      ],
-      "_salary": 400000,
-      "_startDate": "29 Oct 2019",
-      "_notes": "",
-      "_profilePic": "../assets/profile-images/Ellipse-1.png",
-      "id": 3
+      "_notes": "undefined",
+      "_startDate": "2021-03-17T18:30:00.000Z",
+      "id": 4
     }
   ]
 }
